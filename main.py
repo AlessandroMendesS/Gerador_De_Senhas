@@ -4,11 +4,11 @@ import string
 import pyperclip 
 
 def gerar_senha():
-    caixa_senha.delete('1.0', 'end')  # Limpa a caixa antes de gerar nova senha
+    caixa_senha.delete('1.0', 'end') 
     qtd_caracteres = menu.get()
     caracteres = string.ascii_letters + string.digits + string.punctuation
     senha = ''.join(secrets.choice(caracteres) for i in range(int(qtd_caracteres)))
-    caixa_senha.insert("1.0", senha)  # Insere a nova senha
+    caixa_senha.insert("1.0", senha) 
 
 def copiar_senha():
     senha = caixa_senha.get("1.0", "end-1c") 
@@ -28,7 +28,7 @@ tabview.grid()
 tabview.add("Gerador de senhas")
 tabview.tab("Gerador de senhas").grid_columnconfigure(0, weight=1)
 
-valores = [str(i) for i in range(1, 26)]  # Convertendo os valores para string
+valores = [str(i) for i in range(1, 26)] 
 
 entrada1 = ct.CTkLabel(tabview.tab("Gerador de senhas"), text="Defina a quantidade de caracteres:")
 entrada1.grid(row=0, column=0, padx=10, pady=10)
