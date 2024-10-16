@@ -2,6 +2,9 @@
 
 Este projeto é uma aplicação GUI (Interface Gráfica de Usuário) que gera senhas seguras e permite copiá-las para a área de transferência. Ele foi desenvolvido utilizando a biblioteca `customtkinter` para a interface, `secrets` para a geração de senhas seguras e `pyperclip` para copiar as senhas.
 
+![image](https://github.com/user-attachments/assets/accb1390-1815-43ef-a957-222e953d7c45)
+
+
 ## Funcionalidades
 
 - Geração de senhas aleatórias com letras, números e símbolos.
